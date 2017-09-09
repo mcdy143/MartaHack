@@ -34,6 +34,10 @@ app.get('/upload_result', (req, res) => {
   res.sendFile(__dirname + '/upload_result.html');
 });
 
+app.get('/report_result', (req, res) => {
+  res.sendFile(__dirname + '/report_result.html');
+});
+
 app.listen(port, () => {
   console.log('Listening on port 8080!')
 })
