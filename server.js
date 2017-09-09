@@ -26,6 +26,14 @@ app.get('/upload', (req, res) => {
   res.sendFile(__dirname + '/upload.html');
 });
 
+app.get('/search_result', (req, res) => {
+  res.sendFile(__dirname + '/search_result.html');
+});
+
+app.get('/upload_result', (req, res) => {
+  res.sendFile(__dirname + '/upload_result.html');
+});
+
 app.listen(port, () => {
   console.log('Listening on port 8080!')
 })
